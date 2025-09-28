@@ -16,7 +16,6 @@ def bing_news_search(query: str) -> Optional[List[str]]:
 
     Note:
         This function parses Bing's HTML directly and may break if Bing changes its layout.
-        Use of official APIs (e.g., Bing Search API via Azure) is recommended for production.
     """
     if not isinstance(query, str) or not query.strip():
         print("Invalid or empty query provided: %r", query)
@@ -56,3 +55,4 @@ def bing_news_search(query: str) -> Optional[List[str]]:
     return urls
 
 print(bing_news_search("Kurt Cobain"))
+
